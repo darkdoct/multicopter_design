@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 11)
 # Suppress warnings.
 add_definitions(
   -D_CRT_SECURE_NO_WARNINGS
+  -DEIGEN_DONT_ALIGN_STATICALLY
 )
 if(UNIX)
   set(GCC_COVERAGE_COMPILE_FLAGS "-Wno-format")
